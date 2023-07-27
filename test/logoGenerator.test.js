@@ -1,6 +1,5 @@
 const generateShapes = require('../logoGenerator');
 
-
 describe('logoGenerator', () => {
     describe('shape', () => {
         it('should return back correct XML & Shape', () => {
