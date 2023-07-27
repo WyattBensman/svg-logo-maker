@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateShapes = require('./generateShapes')
+const generateShapes = require('./logoGenerator')
 
 const questions = [
     {
