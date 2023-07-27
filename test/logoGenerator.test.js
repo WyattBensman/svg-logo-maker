@@ -2,7 +2,7 @@ const generateShapes = require('../logoGenerator');
 
 
 describe('logoGenerator', () => {
-    describe('circle', () => {
+    describe('shape', () => {
         it('should return back correct XML & Shape', () => {
             const result = `
     <svg width="200" height="100">
