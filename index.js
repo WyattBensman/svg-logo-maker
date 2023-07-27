@@ -33,3 +33,13 @@ const questions = [
         choices: ['white', 'red', 'green', 'blue', 'orange', 'yellow']
     }
 ];
+
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        fs.writeFile('logo.svg', generateShapes(answers), (err) => {
+            if (err) console.log(err);
+        });
+    });
+}
+
+init();
