@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateShapes = require('./logoGenerator')
+const htmlGenerator = require('./htmlGenerator');
 
 const questions = [
     {
@@ -36,8 +37,15 @@ const questions = [
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
+        const svg = generateShapes(answers);
+        const html = htmlGenerator(svg);
+
         fs.writeFile('logo.svg', generateShapes(answers), (err) => {
             if (err) console.log(err);
+        });
+        fs.writeFile('output.html', html, (err) => {
+            if (err) console.log(err);
+            else console.log('output.html file created successfully!');
         });
     });
 }

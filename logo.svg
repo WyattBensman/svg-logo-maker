@@ -1,6 +1,6 @@
 
-    <svg width="200" height="100">
-        <polygon points="150 45,260 245, 40 245" fill="#00FF00" />
-        <text x="10" y="20" font-family="Arial" font-size="16" fill="#00FF00">he</text>
+    <svg width="300" height="200">
+        <rect x="50" y="20" rx="10" ry="10" width="150" height="150" fill="#0000FF" />
+        <text x="100" y="100" font-family="Arial" font-size="25" fill="#0000FF">HEY</text>
     </svg>
     
