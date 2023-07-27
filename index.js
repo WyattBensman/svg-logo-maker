@@ -7,7 +7,7 @@ const questions = [
         type: 'input',
         message: 'Text:',
         name: 'text',
-        function(input) {
+        validate: function (input) {
             if (input.length > 3) {
                 return 'Text must be up to 3 letters.';
             }
