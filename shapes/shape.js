@@ -3,6 +3,7 @@ class Shape {
         this.shapeColor = 'black';
     }
 
+    // Call in Test to test the color
     setColor(color) {
         this.shapeColor = color;
     }
